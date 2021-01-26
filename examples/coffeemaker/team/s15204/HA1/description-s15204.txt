@@ -1,0 +1,12 @@
+Use case - Purchase a beverage
+
+Description:
+Step | Action
+ 1   | User approaches the coffee maker
+ 2   | User puts enough money for a beverage of choice
+ 3   | User chooses a beverage
+ 4   | Coffee maker prepares a cup
+ 5   | Coffee maker adds all ingredients
+ 6   | (Optional) Coffee maker returns change
+ 7   | Coffee maker makes a sound, indicating the finish of coffee making
+ 8   | User retrieves the cup
