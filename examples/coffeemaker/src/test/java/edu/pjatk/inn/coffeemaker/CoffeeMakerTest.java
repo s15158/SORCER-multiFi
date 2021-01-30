@@ -75,6 +75,30 @@ public class CoffeeMakerTest {
 	}
 
 	@Test
+	public void testDeleteRecipe() {
+		assertTrue(coffeeMaker.addRecipe(espresso));
+		assertTrue(coffeeMaker.deleteRecipe(espresso));
+	}
+
+	@Test
+	public void testCheckInventory() {
+		Inventory inventory = coffeeMaker.checkInventory();
+		assertEquals(inventory.getCoffee(), 15);
+		inventory.setCoffee(50);
+		assertEquals(inventory.getCoffee(), 50);
+	}
+
+	@Test
+	public void testAddInventory() {
+		coffeeMaker.addInventory(5, 5, 5, 5);
+		Inventory inventory = coffeeMaker.checkInventory();
+		assertEquals(inventory.getCoffee(), 20);
+		assertEquals(inventory.getMilk(), 20);
+		assertEquals(inventory.getSugar(), 20);
+		assertEquals(inventory.getChocolate(), 20);
+	}
+
+	@Test
 	public void testContextCofee() throws ContextException {
 		assertTrue(espresso.getAmtCoffee() == 6);
 	}
