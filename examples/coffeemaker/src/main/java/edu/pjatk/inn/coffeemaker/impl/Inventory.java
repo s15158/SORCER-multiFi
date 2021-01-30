@@ -26,8 +26,6 @@ public class Inventory {
     public void setChocolate(int chocolate) {
     	if(chocolate >= 0)
     		Inventory.chocolate = chocolate;
-    	else
-            Inventory.chocolate = 0;
     }
     public int getCoffee() {
         return coffee;
@@ -35,8 +33,6 @@ public class Inventory {
     public void setCoffee(int coffee) {
     	if(coffee >= 0)
     		Inventory.coffee = coffee;
-    	else
-    		Inventory.coffee = 0;
     }
     public int getMilk() {
         return milk;
@@ -44,8 +40,6 @@ public class Inventory {
     public void setMilk(int milk) {
     	if(milk >= 0)
     		Inventory.milk = milk;
-    	else
-    		Inventory.milk = 0;
     }
     public int getSugar() {
         return sugar;
@@ -53,8 +47,6 @@ public class Inventory {
     public void setSugar(int sugar) {
     	if(sugar >= 0)
     		Inventory.sugar = sugar;
-    	else
-    		Inventory.sugar = 0;
     }
     
     /**
