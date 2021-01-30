@@ -1,0 +1,6 @@
+Class#Line          Method              Description
+CoffeeMaker#92      deleteRecipe        The method was not actually deleting recipes.
+CoffeeMaker#149     addInventory        The method did not allow for positive sugar amounts - sugar could only be subtracted from the inventory.
+CoffeeMaker#185     makeCoffee          The method was not subtracting the amount of coffee required, this amount was added instead.
+CoffeeMaker#125     editRecipe          The method was looking for the name of new recipe instead of the old one, and the found recipe was not deleted correctly before adding the new recipe.
+CoffeeMaker#25      addRecipe           The method allowed adding up to 4 recipes, while the requirements state that there should be only 3. The value for a constant was set incorrectly.
