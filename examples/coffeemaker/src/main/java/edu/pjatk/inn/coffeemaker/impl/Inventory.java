@@ -24,49 +24,43 @@ public class Inventory {
         return chocolate;
     }
     public void setChocolate(int chocolate) {
-    	if(chocolate >= 0) {
+    	if(chocolate >= 0)
     		Inventory.chocolate = chocolate;
-    	}
-        
+    	else
+            Inventory.chocolate = 0;
     }
     public int getCoffee() {
         return coffee;
     }
     public void setCoffee(int coffee) {
-    	if(coffee >= 0) {
+    	if(coffee >= 0)
     		Inventory.coffee = coffee;
-    	}
-//    	else {
-//    		Inventory.coffee = 0;
-//    	}
+    	else
+    		Inventory.coffee = 0;
     }
     public int getMilk() {
         return milk;
     }
     public void setMilk(int milk) {
-    	if(milk >= 0) {
+    	if(milk >= 0)
     		Inventory.milk = milk;
-    	}
-//    	else {
-//    		Inventory.milk = 0;
-//    	}
+    	else
+    		Inventory.milk = 0;
     }
     public int getSugar() {
         return sugar;
     }
     public void setSugar(int sugar) {
-    	if(sugar >= 0) {
+    	if(sugar >= 0)
     		Inventory.sugar = sugar;
-    	}
-//    	else {
-//    		Inventory.sugar = 0;
-//    	}
+    	else
+    		Inventory.sugar = 0;
     }
     
     /**
      * Returns true if there are enough ingredients to make
      * the beverage.
-     * @param r
+     * @param r recipe to check
      * @return boolean
      */
     public boolean enoughIngredients(Recipe r) {
