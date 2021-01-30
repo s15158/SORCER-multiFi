@@ -24,29 +24,33 @@ public class Inventory {
         return chocolate;
     }
     public void setChocolate(int chocolate) {
-    	if(chocolate >= 0)
-    		Inventory.chocolate = chocolate;
+    	if(chocolate >= 0) {
+            Inventory.chocolate = chocolate;
+        }
     }
     public int getCoffee() {
         return coffee;
     }
     public void setCoffee(int coffee) {
-    	if(coffee >= 0)
-    		Inventory.coffee = coffee;
+    	if(coffee >= 0) {
+            Inventory.coffee = coffee;
+        }
     }
     public int getMilk() {
         return milk;
     }
     public void setMilk(int milk) {
-    	if(milk >= 0)
-    		Inventory.milk = milk;
+    	if(milk >= 0) {
+            Inventory.milk = milk;
+        }
     }
     public int getSugar() {
         return sugar;
     }
     public void setSugar(int sugar) {
-    	if(sugar >= 0)
-    		Inventory.sugar = sugar;
+    	if(sugar >= 0) {
+            Inventory.sugar = sugar;
+        }
     }
     
     /**
